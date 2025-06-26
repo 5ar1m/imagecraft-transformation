@@ -1,6 +1,6 @@
 const sharp = require('sharp');
 
-module.exports = function compress(buffer, quality = 80) {
+module.exports = function compress(buffer, quality) {
     const image = sharp(buffer);
 
     return image.metadata().then(metadata => {
