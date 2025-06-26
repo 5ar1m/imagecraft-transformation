@@ -10,7 +10,7 @@ async function downloadImageBuffer(key) {
         Key: key,
     };
 
-    const data = await getObject({ Bucket: AWS_S3_BUCKET, Key: key });
+    const data = await getObject({ Bucket: process.env.AWS_S3_BUCKET, Key: key });
     return data.Body;
 }
 
