@@ -1,7 +1,7 @@
 const sharp = require('sharp');
 const {StatusCodes} = require('http-status-codes');
 const downloadImageBuffer = require('../services/image');
-const { internalErr } = require('../middlewares/error');
+const internalErr = require('../middlewares/error');
 const mirror = require('../utils/mirror');
 const resize = require('../utils/resize');
 const crop = require('../utils/crop');
